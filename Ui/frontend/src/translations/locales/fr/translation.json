@@ -1,0 +1,9 @@
+{
+    "title": "Image en étiquettes",
+    "dragndroptext": "Glissez-déposez une image ici, ou cliquez pour sélectionner des fichiers",
+    "confidence": "Confiance",
+    "labels": "Étiquettes",
+    "max_labels": "Nombre max d'étiquettes",
+    "min_confidence": "Confiance min",
+    "delete_labels":"Supprimer les étiquettes"
+}

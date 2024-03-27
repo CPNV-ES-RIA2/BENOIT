@@ -1,0 +1,9 @@
+{
+    "title": "Image to Labels",
+    "dragndroptext": "Drag 'n' drop an image here, or click to select files",
+    "confidence": "Confidence",
+    "labels": "Labels",
+    "max_labels": "Max labels number",
+    "min_confidence": "Min confidence",
+    "delete_labels":"Delete labels"
+}

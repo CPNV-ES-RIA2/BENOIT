@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./Ui/frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - labeldetection
+
+  api-gateway:
+    build: ./APIGateway
+    ports:
+      - "5170:5170"
+    networks:
+      - labeldetection
+    depends_on:
+      - backend
+
+  backend: 
+    build: ./LabelsDetection
+    ports:
+      - "5171:5171"
+    networks:
+      - labeldetection
+    environment:
+      AWS_ACCESS_KEY_ID: your_access_key_id
+      AWS_SECRET_ACCESS_KEY: your_secret_access_key
+      AWS_DEFAULT_REGION: your_aws_region
+
+networks:
+  labeldetection:
+    driver: bridge
+

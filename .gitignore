@@ -1,0 +1,9 @@
+venv/
+ImgToLabels/keys.json
+__pycache__/
+.env
+*.sql
+docker-compose.yml
+.vscode/
+Ui/.DS_Store
+LabelsDetection/LabelDetector/keys.json
